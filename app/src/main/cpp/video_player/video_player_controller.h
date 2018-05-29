@@ -21,7 +21,9 @@ public:
 	virtual ~VideoPlayerController();
 
 	/** 初始化播放器 **/
-	bool init(char *srcFilenameParam, JavaVM *g_jvm, jobject obj, int* max_analyze_duration, int analyzeCnt, int probesize, bool fpsProbeSizeConfigured, float minBufferedDuration, float maxBufferedDuration);
+	bool init(char *srcFilenameParam, JavaVM *g_jvm, jobject obj, int* max_analyze_duration,
+			  int analyzeCnt, int probesize, bool fpsProbeSizeConfigured,
+			  float minBufferedDuration, float maxBufferedDuration);
 
 	/** 继续播放 **/
 	void play();
